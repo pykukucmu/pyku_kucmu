@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nastya — Visual Content Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-bg" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">ВИЗУАЛЬНЫЙ КОНТЕНТ-КРЕАТОР</p>
+        <h1 id="hero-title">у ваших пикселей есть потенциал, я покажу где он</h1>
+        <p class="hero-text">
+          Я создаю визуальный контент для брендов, мероприятий и digital-проектов:
+          иллюстрации, AI-визуалы, анимацию, монтаж и оформление кейсов.
+        </p>
+        <a class="contact-button" href="#contacts" aria-label="Перейти к контактам">
+          <span>Связаться</span>
+        </a>
+        <p class="pixel-joke">Профессионально двигаю пиксели с 2019 года.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-wrap">
+          <img src="assets/images/portrait.webp" alt="Портрет Насти" class="portrait">
+          <div class="status-bubble" aria-live="polite">
+            <span class="status-text">пью кофе ☕</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <span class="section-number">[02]</span>
+        <div>
+          <h2 id="projects-title">мои проекты</h2>
+          <p>Выберите проект — карточки можно листать.</p>
+        </div>
+      </div>
+
+      <div class="carousel-shell">
+        <button class="carousel-arrow prev" type="button" aria-label="Предыдущий проект">‹</button>
+        <div class="carousel" aria-live="polite">
+          <article class="project-card" tabindex="0" data-project="babr">
+            <span class="project-type">Маскот / Айдентика</span>
+            <h3>Сытый бабр</h3>
+            <p>Маскот и визуальная айдентика фестиваля.</p>
+            <div class="card-art card-image">
+              <img src="assets/images/project-babr-cover.jpg" alt="Афиша проекта Сытый бабр">
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="sber">
+            <span class="project-type">Стикерпак</span>
+            <h3>Душа регионов</h3>
+            <p>Стикеры для Сбера с теплым региональным характером.</p>
+            <div class="card-art card-image">
+              <img src="assets/images/project-sber-cover.webp" alt="Афиша проекта Душа регионов">
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="feel-it">
+            <span class="project-type">AI / Game concept</span>
+            <h3>Feel it!</h3>
+            <p>Визуальная концепция игры про red flags и романтический хаос.</p>
+            <div class="card-art card-image">
+              <img src="assets/images/project-feelit-cover.jpg" alt="Обложка проекта Feel it!">
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="brickme">
+            <span class="project-type">3D / NFT concept</span>
+            <h3>BRICKME</h3>
+            <p>LEGO-style 3D-аватары, ончейн-вайб и персонажи коллекции.</p>
+            <div class="card-art card-image">
+              <img src="assets/images/project-brickme-cover.webp" alt="Обложка проекта BRICKME">
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0" data-project="toxic">
+            <span class="project-type">NFT / Visual content</span>
+            <h3>Lili & Toxicat</h3>
+            <p>Визуальная наполняющая NFT-персонажей для криптопроекта.</p>
+            <div class="card-art card-image">
+              <img src="assets/images/project-toxic-cover.jpg" alt="Обложка проекта Lili & Toxicat">
+            </div>
+          </article>
+        </div>
+        <button class="carousel-arrow next" type="button" aria-label="Следующий проект">›</button>
+      </div>
+
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <div class="section-head">
+        <span class="section-number">[03]</span>
+        <div>
+          <h2 id="services-title">Что я могу сделать для бренда</h2>
+          <p>
+            От идеи и мудборда — до финального визуала, который можно показывать клиенту,
+            запускать в рекламу или превращать в кейс.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-grid">
+        <article>Иллюстрация и персонажи</article>
+        <article>Моушн-дизайн и анимация</article>
+        <article>Монтаж роликов</article>
+        <article>AI-визуалы и концепты</article>
+        <article>Оформление кейсов и презентаций</article>
+        <article>Визуалы для мероприятий и рекламы</article>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="section-head">
+        <span class="section-number">[04]</span>
+        <div>
+          <h2 id="contacts-title">от идеи до "нам подходит" - один звонок</h2>
+          <p>
+            Если вашему проекту нужен визуал, персонаж, ролик, баннер, презентация
+            или просто “чтобы было вау” — напишите мне.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-list">
+          <a href="https://t.me/pyku_kucmu" target="_blank" rel="noopener">
+            <span>Telegram</span>
+            <strong>@pyku_kucmu</strong>
+          </a>
+          <a href="mailto:assistentanas@mail.ru">
+            <span>Email</span>
+            <strong>assistentanas@mail.ru</strong>
+          </a>
+          <a href="tel:+79025601344">
+            <span>Телефон</span>
+            <strong>+7 902 5 601 344</strong>
+          </a>
+          <a href="https://www.behance.net/assistentaa06a" target="_blank" rel="noopener">
+            <span>Behance</span>
+            <strong>behance.net/assistentaa06a</strong>
+          </a>
+        </div>
+
+        <figure class="qr-card">
+          <img src="assets/images/qr-code.jpg" alt="QR-код для связи">
+          <figcaption>быстрый путь к контакту</figcaption>
+        </figure>
+      </div>
+
+      <p class="end-joke">Ого, вы правда долистали до конца. Кажется, нам стоит поработать вместе.</p>
+      <a class="back-to-top" href="#top">Вернуться наверх</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Nastya / Visual content creator</p>
+  </footer>
+
+  <div class="project-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Закрыть проект" data-close-modal>×</button>
+      <span class="modal-kicker"></span>
+      <h2 id="modal-title"></h2>
+      <p class="modal-description"></p>
+      <div class="modal-meta-row">
+        <div class="modal-tags"></div>
+        <div class="modal-link-wrap"></div>
+      </div>
+      <div class="modal-media-stage">
+        <button class="modal-arrow modal-prev" type="button" aria-label="Предыдущий материал">‹</button>
+        <div class="modal-gallery"></div>
+        <button class="modal-arrow modal-next" type="button" aria-label="Следующий материал">›</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="image-viewer" aria-hidden="true">
+    <div class="image-viewer-backdrop" data-close-viewer></div>
+    <button class="image-viewer-close" type="button" aria-label="Закрыть изображение" data-close-viewer>×</button>
+    <img class="image-viewer-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
